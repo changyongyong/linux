@@ -1,5 +1,5 @@
 #osgi env
-#nohup java -Xms512m -Xmx1024m -jar org.eclipse.osgi_3.11.3.v20170209-1843.jar &
+#nohup java -Xms512m -Xmx1024m -jar XXX.jar &
 
 SERVICE_NAME=osgi
 SERVICE_DIR=/usr/workspace/Chapter1
@@ -33,6 +33,11 @@ case "${1}" in
 		sleep 2
 		$0 start
 		echo "${SERVICE_NAME} restarted"
+		;;
+
+	ps)
+		ps -aux|grep ${JAR_NAME}
+		echo $!
 		;;
 
 	*)
