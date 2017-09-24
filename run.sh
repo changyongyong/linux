@@ -10,7 +10,7 @@ PID=${SERVICE_DIR}/${JAR_CONSOLE_NAME}.pid
 cd ${SERVICE_DIR}
 
 case "${1}" in
-	start )
+	start)
 		nohup java -Xms512m -Xmx1024m -jar ${JAR_NAME} &
 		echo $! > ${PID}
 		echo "${SERVICE_NAME} started"
