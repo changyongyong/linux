@@ -7,7 +7,7 @@ your_name="linux"
 echo $your_name
 echo ${your_name}
 
-#循环
+#循环	skill为指针，in 后边的为循环体
 for skill in Ada Coffe Action Java; do
 	#statements
 	echo "I am good at ${skill}Script"
