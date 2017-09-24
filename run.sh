@@ -44,4 +44,5 @@ case "${1}" in
 		echo "请输入正确参数"
 		;;
 esac
+
 exit 0

@@ -1,10 +1,13 @@
 echo "hello world !"
 
+#定义变量
 your_name="linux"
 
+#打印使用变量
 echo $your_name
 echo ${your_name}
 
+#循环
 for skill in Ada Coffe Action Java; do
 	#statements
 	echo "I am good at ${skill}Script"
