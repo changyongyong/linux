@@ -11,7 +11,7 @@ cd ${SERVICE_DIR}
 
 case "${1}" in
 	start)
-		nohup java -Xms512m -Xmx1024m -jar ${JAR_NAME} &
+		nohup java -Xms512m -Xmx1024m -jar ${JAR_NAME} >/dev/null 2>&1 &
 		echo $! > ${PID}
 		echo "${SERVICE_NAME} started"
 		;;
